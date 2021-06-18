@@ -1,3 +1,6 @@
 .hidden{
     display: none;
 }
+body{
+    background-image: url(../img/0.jpeg);
+}
