@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    
+<link rel="stylesheet" href="./Momentum_files/sytle.css"></head>
+<body>
+    <h2 id="clock">18:29:35</h2>
+    <form class="hidden" id="login-form">
+        <input required="" maxlength="15" type="text" placeholder="What is your name?"> 
+        <input type="submit" value="LogIn">
+    </form>
+    <h1 class="" id="greeting">Hello Park_ha</h1>
+    
+    <div id="container">
+        <ul id="todo-list"><li id="1624094965845"><span>1</span><button>❌</button></li><li id="1624094969045"><span>2</span><button>❌</button></li><li id="1624094969538"><span>3</span><button>❌</button></li><li id="1624094974957"><span>4</span><button>❌</button></li></ul>
+    </div>
+
+    <div id="quote">
+        <span>2</span>
+        <span>2-1</span>
+    </div>
+    <div id="weather">
+        <span>Clouds / 27.76</span>
+        <span>Cheongju-si</span>
+    </div>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required="">
+        <!-- <input type="submit"> -->
+    </form>
+    <script src="./Momentum_files/greetings.js"></script>
+    <script src="./Momentum_files/clock.js"></script>
+    <script src="./Momentum_files/quotes.js"></script>
+    <!-- <script src="./js/background.js"></script> -->
+    <script src="./Momentum_files/todo.js"></script>
+    <script src="./Momentum_files/weather.js"></script>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

@@ -2,5 +2,37 @@
     display: none;
 }
 body{
-    background-image: url(../img/0.jpeg);
+    background-color:black;
+}
+#clock{
+    text-align: center;
+    color:white;
+}
+#greeting{
+    color:white;
+}
+#weather{
+    color:white;
+}
+#quote{
+    color:white;
+}
+#todo-list{
+    color:white;
+}
+#container1{
+    background-color:blue;
+    height: 30px;
+    width:500px;
+    margin: 0 auto;
+}
+#container2{
+    background-color:blue;
+    height: 300px;
+    width:500px;
+    margin: 0 auto;
+}
+#todo-form{
+    margin: 0 auto;
+    width: 10%;
 }
